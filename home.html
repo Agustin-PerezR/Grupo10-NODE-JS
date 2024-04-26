@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,37 +8,45 @@
     <link rel="stylesheet" href="estilos/stylesheet.css">
     <title>Home</title>
 </head>
+
 <body>
     <header>
         <nav>
             <a href="home.html"> <img class="logo" src="recursos/book.png" alt="logo"></a>
             <ul class="headerlist">
-                <li class="liheader"><input type="text" name="buscador"></input></li>
                 <li class="liheader"> <a class="Botones" href="carrito.html">Carrito</a></li>
                 <li class="liheader"> <a class="Botones" href="contacto.html">Contactanos</a></li>
+                <div class="search-box">
+                    <input type="text" placeholder="Buscar...">
+                    <i class="fas fa-search"></i> <!-- Asegúrate de incluir FontAwesome para el ícono de la lupa -->
+                </div>
+
             </ul>
+            
         </nav>
     </header>
-        <main> 
-            <div class="carousel-slide">
-                <img src="recursos/1-libreria-lello_cf018156_1000x667.jpg" alt="Slide 1">
-              </div>
-              <div class="carousel-slide">
-                <img src="recursos/book.png" alt="Slide 2">
-              </div>
-              <div class="carousel-slide">
-                <img src="recursos/facebook.png" alt="Slide 3">
-              </div>
-            </div>
-            
-            <script src="script.js"></script>
-        </main>
+    <main>
+        <div class="carousel-slide">
+            <img src="recursos/instagram.png" alt="Slide 1">
+        </div>
+        <div class="carousel-slide">
+            <img src="recursos/book.png" alt="Slide 2">
+        </div>
+        <div class="carousel-slide">
+            <img src="recursos/facebook.png" alt="Slide 3">
+        </div>
+        </div>
+
+        <script src="script.js"></script>
+    </main>
     <footer>
-       <span class="logos">
+        <span class="logos">
             <a href="https:/facebook.com"><img src="recursos/facebook.png" width="50px"></a>
             <a href="https:/instagram.com"><img src="recursos/instagram.png" width="50px"></a>
             <a href="contacto.html"><img src="recursos/contacto.png" width="50px"></a></li>
-       </span>
+        </span>
     </footer>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
+
 </html>
