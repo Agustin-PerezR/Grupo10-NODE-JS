@@ -1,5 +1,6 @@
 body{
     margin: 0%;
+    background-color:aliceblue
 }
 nav{
     display: flex;
@@ -29,10 +30,11 @@ nav{
 }
 .Botones{
     color: black;
+    text-decoration: none;
 }
 
 a {
-    text-decoration: none;
+   
     position: relative;
     color: #000;
   }
@@ -68,59 +70,47 @@ a {
     padding: 10px;
 }
 
-.search-box {
-    position: relative;
-    width: 50px;
-    height: 50px;
-    background-color: #c2bebe;
-    border-radius: 25px;
-    transition: width 0.5s ease-in-out;
-    cursor: pointer;
-    margin-right: 50px;
-  }
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .search-box:hover {
-    width: 120px;
-  }
+#search-input {
+  width: 200px;
+  padding: 10px;
+  border: 0px ;
+  border-bottom: 3px  solid darkgreen;
+  background-color: transparent;
+  
+  margin-right: 10px  ; 
+}
+#search-input:focus{
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
 
-  .search-box input[type="text"] {
-    position: absolute;
-    top: 0;
-    background-color: #c2bebe;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 1px;
-    padding-left: 40px;
-    border: none;
-    border-radius: 25px;
-    font-size: 16px;
-    outline: none;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-  }
-
-  .search-box:hover input[type="text"] {
-    opacity: 1;
-  }
-
-  .search-box i {
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    transform: translateY(-50%);
-    font-size: 20px;
-    color: #000;
-  }
+#search-button {
+  background-color: #007bff;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+#search-button:hover{
+  color:#fff;
+  background-color: #000;
+  transition-duration: 0.9s;
+}
 
 #cards-container{
   display: flex; /* Mostrar como flexbox */
   flex-wrap: wrap; /* Envolver en múltiples filas si no caben en una sola */
-  justify-content: space-between; /* Distribuir el espacio entre las columnas */ 
+  justify-content: space-around; /* Distribuir el espacio entre las columnas */ 
   margin: 2rem    ; 
 }
 .card{
-  width: calc(27% - 34px); /* Ancho de cada card (33.33% del ancho total menos el espaciado) */
+  width: calc(29% - 34px); /* Ancho de cada card (33.33% del ancho total menos el espaciado) */
   margin: 10px; /* Espaciado entre las cards */
   display: inline-block; /* Mostrar en línea para formar filas */
   vertical-align: top; /* Alinear en la parte superior de la fila */
@@ -132,14 +122,18 @@ footer{
     justify-content: left;
     align-items: end;
     background-color: #ab811f;
+
 }
 .logos{
   
     margin: 10px;
 }
-.carousel {
+#carousel {
     width: 50%;
     overflow: hidden;
+    background-image: url("../recursos/Fondo.png");
+    background-repeat:repeat-x;
+    background-position: center;
 
   }
   

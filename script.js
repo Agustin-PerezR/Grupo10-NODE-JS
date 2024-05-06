@@ -15,7 +15,22 @@ function showSlides() {
 
 showSlides();
 
+const searchInput = document.getElementById('search-input');
+  const searchButton = document.getElementById('search-button');
 
+  searchButton.addEventListener('click', () => {
+    // Aquí puedes agregar la lógica para expandir el search bar
+    // cuando se hace clic en el botón.
+    
+    if (searchInput.style.display == "none"){
+      searchInput.style.display = "block"
+    }
+    else{
+      searchInput.style.display = "none"
+      searchInput.value = " "
+    }
+   
+  });
 
 const cardData = [
   {
