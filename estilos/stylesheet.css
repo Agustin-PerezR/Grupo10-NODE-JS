@@ -1,21 +1,21 @@
 body{
     margin: 0%;
-    background-color:aliceblue
+    background-color: #eae3d7 !important;
 }
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ab811f;
+    background-color: #bfa989;
 }
 .headerlist{
-    display: flex;
-    justify-content: space-between;
-    /* align-content: stretch; */
-    flex-wrap: nowrap;
-    flex-direction: row-reverse;
-    align-items: center;
-    margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
 }
 
 .liheader{
@@ -68,6 +68,7 @@ a {
 .logo{
      width: 4rem;  
     padding: 10px;
+    scale: 1.5;
 }
 
 .search-container {
@@ -79,18 +80,19 @@ a {
 #search-input {
   width: 200px;
   padding: 10px;
-  border: 0px ;
-  border-bottom: 3px  solid darkgreen;
+  border: 3px solid #86644f;
+  border-radius: 10px;
   background-color: transparent;
-  
-  margin-right: 10px  ; 
+  margin-right: 10px;
 }
+  
+
 #search-input:focus{
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 #search-button {
-  background-color: #007bff;
+  background-color: transparent;
   color: #000;
   border: none;
   border-radius: 5px;
@@ -114,14 +116,15 @@ a {
   margin: 10px; /* Espaciado entre las cards */
   display: inline-block; /* Mostrar en línea para formar filas */
   vertical-align: top; /* Alinear en la parte superior de la fila */
-
+  box-shadow: 0px 0px 9px 3px rgb(0 0 0);
+  scale: 0.7;
 }
 
 footer{
     display: flex;
     justify-content: left;
     align-items: end;
-    background-color: #ab811f;
+    background-color: #bfa989;
 
 }
 .logos{
