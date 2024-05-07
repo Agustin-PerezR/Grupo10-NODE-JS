@@ -34,35 +34,38 @@ const searchInput = document.getElementById('search-input');
 
 const cardData = [
   {
-      title: 'Card 1',
-      text: 'Contenido de la primera card.',
-      link: 'https://www.example.com'
+      title: 'The New Chapter',
+      text: '$15.000',
+      link: 'https://www.example.com',
+      Portada: 'recursos/portada 3.jpg'
   },
   {
       title: 'Card 2',
       text: 'Contenido de la segunda card.',
-      link: 'https://www.example.com'
+      link: 'https://www.example.com',
+      Portada: 'recursos/portada.jpg'
   },
   {
     title: 'Card 3',
     text: 'Contenido de la segunda card.',
-    link: 'https://www.example.com'
+    link: 'https://www.example.com',
+    Portada: 'recursos/portada1.jpg'
 }
 
   // Agrega más objetos de datos aquí
 ];
 
 // Función para crear una card
-function createCard(title, text, link) {
+function createCard(title, text, link, Portada) {
   const cardDiv = document.createElement('div');
   cardDiv.classList.add('card');
-
+console.log(title , Portada)
   const cardContent = `
-      <img src="recursos/libro3.jpg" class="card-img-top" alt="...">
+      <img src="${Portada}" class="card-img-top" alt="..." >
       <div class="card-body">
           <h5 class="card-title">${title}</h5>
           <p class="card-text">${text}</p>
-          <a href="${link}" class="btn btn-primary">Ir a algún lugar</a>
+          <a href="${link}" class="btn btn-primary" style="background-color: #000 ; Border-color: #000">Comprar</a>
       </div>
   `;
 
@@ -73,6 +76,6 @@ function createCard(title, text, link) {
 // Agrega las cards al contenedor
 const cardsContainer = document.getElementById('cards-container');
 cardData.forEach(card => {
-  const newCard = createCard(card.title, card.text, card.link);
+  const newCard = createCard(card.title, card.text, card.link, card.Portada);
   cardsContainer.appendChild(newCard);
 });
