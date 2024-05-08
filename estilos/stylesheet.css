@@ -1,14 +1,22 @@
-body{
-    margin: 0%;
-    background-color: #eae3d7 !important;
+body {
+  margin: 0%;
+  background-color: #eae3d7 !important;
 }
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #bfa989;
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #bfa989;
 }
-.headerlist{
+
+.logo {
+  width: 4rem;
+  padding: 10px;
+  scale: 1.5;
+}
+
+.headerlist {
   display: flex;
   justify-content: space-evenly;
   align-content: space-around;
@@ -18,57 +26,53 @@ nav{
   margin: 0;
 }
 
-.liheader{
-   
-    border-radius: 8%;
-    background-color: none;
-    display: inline;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
-    margin: 1em;
-    padding: 0.5em;
-  
+.liheader {
+
+  border-radius: 8%;
+  background-color: none;
+  display: inline;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 1em;
+  padding: 0.5em;
+
 }
-.Botones{
-    color: black;
-    text-decoration: none;
+
+.Botones {
+  color: black;
+  text-decoration: none;
 }
 
 a {
-   
-    position: relative;
-    color: #000;
-  }
-  
-  .Botones:hover::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: darkgreen;
-    visibility: visible;
-    transform: scaleX(0);
-    transition: all 0.9s ease-out 0s;
-  }
-  
-  .Botones::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: darkgreen;
-    visibility: hidden;
-    transform: scaleX(1);
-    transition: all 0.9s ease-in-out 0s;
-  }
-  
-.logo{
-     width: 4rem;  
-    padding: 10px;
-    scale: 1.5;
+
+  position: relative;
+  color: #000;
+}
+
+
+.Botones:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: darkgreen;
+  visibility: visible;
+  transform: scaleX(1);
+  transition: all 0.9s ;
+}
+
+.Botones::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: darkgreen;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.9s ;
 }
 
 .search-container {
@@ -77,78 +81,17 @@ a {
   justify-content: center;
 }
 
-#search-input {
-  width: 200px;
-  padding: 10px;
-  border: 3px solid #86644f;
-  border-radius: 10px;
-  background-color: transparent;
-  margin-right: 10px;
-}
-  
 
-#search-input:focus{
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-}
 
-#search-button {
-  background-color: transparent;
-  color: #000;
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-  cursor: pointer;
-}
-#search-button:hover{
-  color:#fff;
-  background-color: #000;
-  transition-duration: 0.9s;
-}
-
-#cards-container{
-  display: flex; /* Mostrar como flexbox */
-  flex-wrap: wrap; /* Envolver en múltiples filas si no caben en una sola */
-  justify-content: space-around; /* Distribuir el espacio entre las columnas */ 
-  margin: 2rem    ; 
-}
-.card{
-  width: calc(29% - 34px); /* Ancho de cada card (33.33% del ancho total menos el espaciado) */
-  margin: 10px; /* Espaciado entre las cards */
-  display: inline-block; /* Mostrar en línea para formar filas */
-  vertical-align: top; /* Alinear en la parte superior de la fila */
-  box-shadow: 0px 0px 9px 3px rgb(0 0 0);
-  scale: 0.7;
-}
-
-footer{
-    display: flex;
-    justify-content: left;
-    align-items: end;
-    background-color: #bfa989;
+footer {
+  display: flex;
+  justify-content: left;
+  align-items: end;
+  background-color: #bfa989;
 
 }
-.logos{
-  
-    margin: 10px;
+
+.logos {
+
+  margin: 10px;
 }
-#carousel {
-    width: 50%;
-    overflow: hidden;
-    background-image: url("../recursos/Fondo.png");
-    background-repeat:repeat-x;
-    background-position: center;
-
-  }
-  
-  .carousel-slide {
-    display:block;
-    text-align: center;
-  }
-  
-  .carousel-slide img {
-    width: 20%;
-    margin: 100px;
-
-  }
-  
-  

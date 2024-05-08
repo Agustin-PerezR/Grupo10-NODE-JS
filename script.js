@@ -21,7 +21,7 @@ const searchInput = document.getElementById('search-input');
   searchButton.addEventListener('click', () => {
     // Aquí puedes agregar la lógica para expandir el search bar
     // cuando se hace clic en el botón.
-    
+    console.log(searchInput.style.display)
     if (searchInput.style.display == "none"){
       searchInput.style.display = "block"
     }
@@ -37,7 +37,7 @@ const cardData = [
       title: 'The New Chapter',
       text: '$15.000',
       link: 'https://www.example.com',
-      Portada: 'recursos/portada 3.jpg'
+      Portada: 'recursos/portada3.jpg'
   },
   {
       title: 'Card 2',

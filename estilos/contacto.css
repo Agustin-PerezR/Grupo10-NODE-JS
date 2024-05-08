@@ -1,0 +1,47 @@
+h1 {
+    text-align: center;
+}
+iframe {
+    border: 0;
+    margin: 2rem;
+
+}
+#contacto {
+    font-family: Arial, sans-serif;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgb(0, 0, 0);
+    margin:20px
+}
+
+#contacto label {
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+#contacto input[type="text"],
+#contacto input[type="email"],
+#contacto textarea {
+    width: 99%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #bfa989;
+    border-radius: 4px;
+}
+
+#contacto input[type="submit"] {
+    background-color: #bfa989;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contacto input[type="submit"]:hover {
+    background-color: #000;
+    transition: 0.7s;
+}

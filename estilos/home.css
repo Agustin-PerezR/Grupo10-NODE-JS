@@ -1,0 +1,71 @@
+
+
+#search-input {
+  display: none;
+  width: 200px;
+  padding: 10px;
+  border: 3px solid #86644f;
+  border-radius: 10px;
+  background-color: transparent;
+  margin-right: 10px;
+}
+
+#search-button {
+  background-color: transparent;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#search-button:hover {
+  color: #fff;
+  background-color: #000;
+  transition-duration: 0.9s;
+}
+
+
+#carousel {
+    width: 50%;
+    overflow: hidden;
+    background-image: url("../recursos/Fondo.png");
+    background-repeat: repeat-x;
+    background-position: center;
+  
+  }
+  
+  .carousel-slide {
+    display: block;
+    text-align: center;
+  }
+  
+  .carousel-slide img {
+    width: 20%;
+    margin: 100px;
+  
+  }
+  
+  #cards-container {
+    display: flex;
+    /* Mostrar como flexbox */
+    flex-wrap: wrap;
+    /* Envolver en múltiples filas si no caben en una sola */
+    justify-content: space-around;
+    /* Distribuir el espacio entre las columnas */
+    margin: 2rem;
+  }
+  
+  .card {
+    width: calc(29% - 34px);
+    /* Ancho de cada card (33.33% del ancho total menos el espaciado) */
+    margin: 10px;
+    /* Espaciado entre las cards */
+    display: inline-block;
+    /* Mostrar en línea para formar filas */
+    vertical-align: top;
+    /* Alinear en la parte superior de la fila */
+    box-shadow: 0px 0px 9px 3px rgb(0 0 0);
+    scale: 0.7;
+  }
+  
