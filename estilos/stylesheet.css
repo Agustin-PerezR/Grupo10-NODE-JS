@@ -1,6 +1,13 @@
+*{
+  font-family: Arial, sans-serif;
+  
+  
+}
+
 body {
   margin: 0%;
   background-color: #eae3d7 !important;
+
 }
 
 nav {

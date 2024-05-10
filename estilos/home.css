@@ -5,7 +5,7 @@
   width: 200px;
   padding: 10px;
   border: 3px solid #86644f;
-  border-radius: 10px;
+  border-radius: 4px;
   background-color: transparent;
   margin-right: 10px;
 }
@@ -26,15 +26,7 @@
 }
 
 
-#carousel {
-    width: 50%;
-    overflow: hidden;
-    background-image: url("../recursos/Fondo.png");
-    background-repeat: repeat-x;
-    background-position: center;
-  
-  }
-  
+
   .carousel-slide {
     display: block;
     text-align: center;
@@ -44,6 +36,14 @@
     width: 20%;
     margin: 100px;
   
+  }
+  .carousel-slide img:hover{
+    scale: 1.1;                                  ;
+    transition:all 1s;
+  }
+  h2{
+    margin-left: 3rem;
+    
   }
   
   #cards-container {

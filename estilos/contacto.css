@@ -1,11 +1,13 @@
 h1 {
     text-align: center;
+    
 }
 iframe {
-    border: 0;
+    width: -webkit-fill-available;
+    /* border: 0; */
     margin: 2rem;
-
 }
+
 #contacto {
     font-family: Arial, sans-serif;
     background-color: transparent;
