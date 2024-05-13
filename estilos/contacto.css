@@ -1,19 +1,28 @@
-h1 {
+
+:root {
+    --color-principal: #bfa989;
+    --color-secundario: #000;
+    --fuente-principal: 'Arial', sans-serif;
+  }
+h1, h2 {
     text-align: center;
     
 }
 iframe {
-    width: -webkit-fill-available;
-    /* border: 0; */
-    margin: 2rem;
-}
-
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border: none;
+    margin: 2rem auto; /* Centrar horizontalmente */
+    display: flex;
+    justify-content: center;
+  }
 #contacto {
     font-family: Arial, sans-serif;
     background-color: transparent;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 4px rgb(0, 0, 0);
+    box-shadow: 0 0 4px var(--color-secundario);
     margin:20px
 }
 
@@ -23,6 +32,7 @@ iframe {
     font-weight: bold;
 }
 
+
 #contacto input[type="text"],
 #contacto input[type="email"],
 #contacto textarea {
@@ -30,12 +40,12 @@ iframe {
     padding: 8px;
     margin-top: 5px;
     margin-bottom: 10px;
-    border: 1px solid #bfa989;
+    border: 1px solid var(--color-principal);
     border-radius: 4px;
 }
 
 #contacto input[type="submit"] {
-    background-color: #bfa989;
+    background-color:  var(--color-principal);
     color: white;
     padding: 10px 15px;
     border: none;
@@ -44,6 +54,6 @@ iframe {
 }
 
 #contacto input[type="submit"]:hover {
-    background-color: #000;
+    background-color: var(--color-secundario);
     transition: 0.7s;
 }

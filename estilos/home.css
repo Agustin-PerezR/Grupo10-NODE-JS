@@ -27,20 +27,50 @@
 
 
 
-  .carousel-slide {
-    display: block;
-    text-align: center;
-  }
-  
-  .carousel-slide img {
-    width: 20%;
-    margin: 100px;
-  
-  }
-  .carousel-slide img:hover{
-    scale: 1.1;                                  ;
-    transition:all 1s;
-  }
+.carousel-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.carousel-slide {
+  display: none; /* Ocultar todas las diapositivas por defecto */
+  flex: 0 0 100%;
+  text-align: center;
+}
+
+.carousel-slide img {
+  width: 100%;
+  vertical-align: middle;
+  margin-top: 20px;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 10px;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+}
+.prev{
+  margin-left: 20%;
+}
+.next{
+  margin-right: 20%;
+}
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+
   h2{
     margin-left: 3rem;
     
@@ -48,12 +78,10 @@
   
   #cards-container {
     display: flex;
-    /* Mostrar como flexbox */
     flex-wrap: wrap;
-    /* Envolver en múltiples filas si no caben en una sola */
     justify-content: space-around;
-    /* Distribuir el espacio entre las columnas */
     margin: 2rem;
+    margin-top: 0;
   }
   
   .card {

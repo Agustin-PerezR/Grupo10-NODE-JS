@@ -1,3 +1,5 @@
+
+
 *{
   font-family: Arial, sans-serif;
   
@@ -21,6 +23,13 @@ nav {
   width: 4rem;
   padding: 10px;
   scale: 1.5;
+}
+ input[type="text"]:focus,
+ input[type="email"]:focus,
+ textarea:focus {
+  outline: none;
+  border-color: var(--color-principal);
+  box-shadow: 0 0 0 2px rgba(191, 168, 137, 0.5);
 }
 
 .headerlist {

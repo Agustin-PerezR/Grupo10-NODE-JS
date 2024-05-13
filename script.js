@@ -1,19 +1,48 @@
 let slideIndex = 0;
 const slides = document.querySelectorAll('.carousel-slide');
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
 
-function showSlides() {
+function showSlides(n) {
+  if (n > slides.length) {
+    slideIndex = 1;
+  } else if (n < 1) {
+    slideIndex = slides.length;
+  }
+
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = 'none';
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-  slides[slideIndex - 1].style.display = 'block';
-  setTimeout(showSlides, 10000); // Cambia la imagen cada 2 segundos (2000 milisegundos)
+
+  slides[slideIndex - 1].style.display = 'flex';
 }
 
-showSlides();
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+prevButton.addEventListener('click', function() {
+  console.log("hoola")
+  plusSlides(-1);
+});
+
+nextButton.addEventListener('click', function() {
+  plusSlides(1);
+});
+
+showSlides(slideIndex);
+
+// Para iniciar el carrusel automáticamente
+function startAutoShow() {
+  showSlides(slideIndex += 1);
+  setTimeout(startAutoShow, 10000); // Cambia la imagen cada 10 segundos
+}
+
+startAutoShow(); // Llama a la función para iniciar el carrusel
 
 const searchInput = document.getElementById('search-input');
   const searchButton = document.getElementById('search-button');
