@@ -1,19 +1,48 @@
 let slideIndex = 0;
 const slides = document.querySelectorAll('.carousel-slide');
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
 
-function showSlides() {
+function showSlides(n) {
+  if (n > slides.length) {
+    slideIndex = 1;
+  } else if (n < 1) {
+    slideIndex = slides.length;
+  }
+
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = 'none';
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-  slides[slideIndex - 1].style.display = 'block';
-  setTimeout(showSlides, 10000); // Cambia la imagen cada 2 segundos (2000 milisegundos)
+
+  slides[slideIndex - 1].style.display = 'flex';
 }
 
-showSlides();
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+prevButton.addEventListener('click', function() {
+  console.log("hoola")
+  plusSlides(-1);
+});
+
+nextButton.addEventListener('click', function() {
+  plusSlides(1);
+});
+
+showSlides(slideIndex);
+
+// Para iniciar el carrusel automáticamente
+function startAutoShow() {
+  showSlides(slideIndex += 1);
+  setTimeout(startAutoShow, 10000); // Cambia la imagen cada 10 segundos
+}
+
+startAutoShow(); // Llama a la función para iniciar el carrusel
 
 const searchInput = document.getElementById('search-input');
   const searchButton = document.getElementById('search-button');
@@ -21,7 +50,7 @@ const searchInput = document.getElementById('search-input');
   searchButton.addEventListener('click', () => {
     // Aquí puedes agregar la lógica para expandir el search bar
     // cuando se hace clic en el botón.
-    
+    console.log(searchInput.style.display)
     if (searchInput.style.display == "none"){
       searchInput.style.display = "block"
     }
@@ -34,20 +63,20 @@ const searchInput = document.getElementById('search-input');
 
 const cardData = [
   {
-      title: 'The New Chapter',
+      title: 'El camino de la Guerrera',
       text: '$15.000',
       link: 'https://www.example.com',
-      Portada: 'recursos/portada 3.jpg'
+      Portada: 'recursos/portada3.jpg'
   },
   {
-      title: 'Card 2',
-      text: 'Contenido de la segunda card.',
+      title: 'El color perdido del bosque',
+      text: '$9.000',
       link: 'https://www.example.com',
       Portada: 'recursos/portada.jpg'
   },
   {
-    title: 'Card 3',
-    text: 'Contenido de la segunda card.',
+    title: 'Harry Potter y la piedra filosofal ',
+    text: '$20.000',
     link: 'https://www.example.com',
     Portada: 'recursos/portada1.jpg'
 }
