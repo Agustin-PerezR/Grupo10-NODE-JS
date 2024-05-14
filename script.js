@@ -63,20 +63,20 @@ const searchInput = document.getElementById('search-input');
 
 const cardData = [
   {
-      title: 'The New Chapter',
+      title: 'El camino de la Guerrera',
       text: '$15.000',
       link: 'https://www.example.com',
       Portada: 'recursos/portada3.jpg'
   },
   {
-      title: 'Card 2',
-      text: 'Contenido de la segunda card.',
+      title: 'El color perdido del bosque',
+      text: '$9.000',
       link: 'https://www.example.com',
       Portada: 'recursos/portada.jpg'
   },
   {
-    title: 'Card 3',
-    text: 'Contenido de la segunda card.',
+    title: 'Harry Potter y la piedra filosofal ',
+    text: '$20.000',
     link: 'https://www.example.com',
     Portada: 'recursos/portada1.jpg'
 }
