@@ -1,0 +1,76 @@
+:root {
+    --color-principal: #bfa989;
+    --color-secundario: #000;
+    --fuente-principal: 'Arial', sans-serif;
+}
+h1, h2 {
+    text-align: center;
+}
+iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border: none;
+    margin: 2rem auto; /* Centrar horizontalmente */
+    display: block; /* Cambiado de flex a block para centrar el iframe */
+}
+#contacto {
+    font-family: var(--fuente-principal);
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 4px var(--color-secundario);
+    margin: 20px;
+}
+#contacto label {
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+}
+#contacto input[type="text"],
+#contacto input[type="email"],
+#contacto input[type="date"],
+#contacto input[type="password"],
+#contacto textarea,
+#contacto select {
+        width: 99%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        border: 1px solid var(--color-principal);
+        border-radius: 4px;
+}
+#contacto input[type="date"]{
+    width: 30%;
+    text-align: center;
+    
+}
+#contacto input[type="submit"] {
+    background-color: var(--color-principal);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#contacto input[type="submit"]:hover {
+    background-color: var(--color-secundario);
+    transition: 0.7s;
+}
+#label-archivo {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-principal);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: var(--fuente-principal);
+    width: 30%;
+    text-align: center;
+}
+
+#label-archivo:hover {
+    background-color: var(--color-secundario);
+    transition: 0.3s;
+}
