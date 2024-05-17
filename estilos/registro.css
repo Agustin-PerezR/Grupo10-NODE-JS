@@ -14,6 +14,7 @@ iframe {
     margin: 2rem auto; /* Centrar horizontalmente */
     display: block; /* Cambiado de flex a block para centrar el iframe */
 }
+
 #contacto {
     font-family: var(--fuente-principal);
     background-color: transparent;
