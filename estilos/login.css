@@ -7,15 +7,39 @@
 h1{
     text-align: center;
 }
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  #login-container {
+    width: 300px; /* O el ancho que prefieras */
+  }
+  
+  footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+  }
+  
 
 
 #login-container {
     font-family: var(--fuente-principal);
     background-color: transparent;
-    padding: 20px;
+    padding: 2%;
     border-radius: 5px;
     box-shadow: 0 0 4px var(--color-secundario);
-    margin: 20px;
+    margin: 2%;
+    width: 50%;
 }
 
 #login-container input[type="email"],

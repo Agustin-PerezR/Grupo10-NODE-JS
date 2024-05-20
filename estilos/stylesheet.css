@@ -4,6 +4,7 @@
   font-family: Arial, sans-serif;
   
   
+  
 }
 
 body {
@@ -26,6 +27,7 @@ nav {
 }
  input[type="text"]:focus,
  input[type="email"]:focus,
+ input[type="password"]:focus,
  textarea:focus {
   outline: none;
   border-color: var(--color-principal);

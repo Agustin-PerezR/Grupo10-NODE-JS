@@ -27,7 +27,7 @@ function validarFormulario() {
     var password = document.getElementById('password').value;
   
     // Usuario y contraseña predefinidos
-    var emailCorrecto = 'user@user.com';
+    var emailCorrecto = 'user@a';
     var passwordCorrecta = '123';
   
     if(email === '' || password === '') {
