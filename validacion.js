@@ -1,4 +1,7 @@
-function validarFormulario() {
+function validarFormulario(event) {
+    event.preventDefault();
+    document.querySelector('input[type="submit"]').disabled = false;
+
     var nombre = document.getElementById('nombre').value;
     var email = document.getElementById('email').value;
     var mensaje = document.getElementById('mensaje').value;
@@ -10,6 +13,7 @@ function validarFormulario() {
   
     if(password !== confirm_password) {
       alert('Las contraseñas no coinciden.');
+      document.querySelector('input[type="submit"]').disabled = true;
       return false;
     }
   
