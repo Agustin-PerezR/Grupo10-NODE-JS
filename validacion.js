@@ -1,4 +1,7 @@
-function validarFormulario() {
+function validarFormulario(event) {
+    event.preventDefault();
+    document.querySelector('input[type="submit"]').disabled = false;
+
     var nombre = document.getElementById('nombre').value;
     var email = document.getElementById('email').value;
     var mensaje = document.getElementById('mensaje').value;
@@ -10,6 +13,7 @@ function validarFormulario() {
   
     if(password !== confirm_password) {
       alert('Las contraseñas no coinciden.');
+      document.querySelector('input[type="submit"]').disabled = true;
       return false;
     }
   
@@ -20,24 +24,24 @@ function validarFormulario() {
     return true;
   }
  
-  function validarLogin() {
-    var usuario = document.getElementById('usuario').value;
+  function validarLogin(event) {
+    event.preventDefault();
+
+    var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
   
     // Usuario y contraseña predefinidos
-    var usuarioCorrecto = 'user';
+    var emailCorrecto = 'user@a';
     var passwordCorrecta = '123';
   
-    if(usuario === '' || password === '') {
-      alert('Por favor, ingresa tu usuario y contraseña.');
+    if(email === '' || password === '') {
+      alert('Por favor, ingresa tu email y contraseña.');
       return false;
-    } else if(usuario !== usuarioCorrecto || password !== passwordCorrecta) {
-      alert('El usuario o la contraseña son incorrectos.');
+    } else if(email !== emailCorrecto || password !== passwordCorrecta) {
+      alert('El el email o la contraseña son incorrectos.');
       return false;
     } else {
       // Redireccionar a la página de bienvenida si el usuario y contraseña son correctos
       window.location.href = 'home.html';
-      return true;
     }
   }
-  

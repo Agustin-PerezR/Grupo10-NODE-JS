@@ -1,0 +1,68 @@
+:root {
+    --color-principal: #bfa989;
+    --color-secundario: #000;
+    --fuente-principal: 'Arial', sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  #login-container {
+    width: 300px; /* O el ancho que prefieras */
+  }
+  
+  footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+  }
+  
+
+
+#login-container {
+    font-family: var(--fuente-principal);
+    background-color: transparent;
+    padding: 2%;
+    border-radius: 5px;
+    box-shadow: 0 0 4px var(--color-secundario);
+    margin: 2%;
+    width: 50%;
+}
+
+#login-container input[type="email"],
+#login-container input[type="password"],
+#login-container textarea {
+    width: 99%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid var(--color-principal);
+    border-radius: 4px;
+}
+
+#login-container input[type="submit"] {
+    background-color: var(--color-principal);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#login-container input[type="submit"]:hover {
+    background-color: var(--color-secundario);
+    transition: 0.7s;
+}

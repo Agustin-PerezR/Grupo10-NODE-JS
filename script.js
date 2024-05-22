@@ -26,7 +26,6 @@ function currentSlide(n) {
 }
 
 prevButton.addEventListener('click', function() {
-  console.log("hoola")
   plusSlides(-1);
 });
 
@@ -44,9 +43,11 @@ function startAutoShow() {
 
 startAutoShow(); // Llama a la función para iniciar el carrusel
 
-const searchInput = document.getElementById('search-input');
+  const searchInput = document.getElementById('search-input');
   const searchButton = document.getElementById('search-button');
-
+  searchInput.style.display ="none"
+  
+  console.log(searchInput.style.display)
   searchButton.addEventListener('click', () => {
     // Aquí puedes agregar la lógica para expandir el search bar
     // cuando se hace clic en el botón.
