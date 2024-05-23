@@ -22,7 +22,7 @@
 #search-button:hover {
   color: #fff;
   background-color: #000;
-  transition-duration: 0.9s;
+  transition-duration: 0.5s;
 }
 
 
@@ -62,7 +62,7 @@
   h2{
     margin-left: 3rem;
     margin-top: 100px !important; 
-
+    
     
   }
   

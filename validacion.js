@@ -41,7 +41,9 @@ function validarFormulario(event) {
       alert('El el email o la contraseña son incorrectos.');
       return false;
     } else {
-      // Redireccionar a la página de bienvenida si el usuario y contraseña son correctos
       window.location.href = 'home.html';
+
+      return true
+      // Redireccionar a la página de bienvenida si el usuario y contraseña son correctos
     }
   }
